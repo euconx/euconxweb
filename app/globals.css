@@ -1,0 +1,311 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* Updated color palette based on design brief with red primary and yellow accent */
+  --background: #ffffff;
+  --foreground: #475569;
+  --card: #f1f5f9;
+  --card-foreground: #475569;
+  --popover: #ffffff;
+  --popover-foreground: #475569;
+  --primary: #059669;
+  --primary-foreground: #ffffff;
+  --secondary: #10b981;
+  --secondary-foreground: #ffffff;
+  --muted: #f3f4f6;
+  --muted-foreground: #374151;
+  --accent: #10b981;
+  --accent-foreground: #ffffff;
+  --destructive: #be123c;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #ffffff;
+  --ring: rgba(5, 150, 105, 0.5);
+  --chart-1: #84cc16;
+  --chart-2: #fbbf24;
+  --chart-3: #ef4444;
+  --chart-4: #3b82f6;
+  --chart-5: #9333ea;
+  --radius: 0.5rem;
+  --sidebar: #f1f5f9;
+  --sidebar-foreground: #374151;
+  --sidebar-primary: #059669;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #10b981;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: rgba(5, 150, 105, 0.5);
+
+  /* Modern EuConX color palette inspired by euconx.com */
+  --euconx-orange: #ff8c00;
+  --euconx-orange-light: #ffa500;
+  --euconx-orange-dark: #e67e00;
+  --euconx-navy: #1a2332;
+  --euconx-navy-light: #2a3441;
+  --euconx-navy-dark: #0f1419;
+  --euconx-red: #dc2626;
+  --euconx-gray-50: #f9fafb;
+  --euconx-gray-100: #f3f4f6;
+  --euconx-gray-200: #e5e7eb;
+  --euconx-gray-300: #d1d5db;
+  --euconx-gray-400: #9ca3af;
+  --euconx-gray-500: #6b7280;
+  --euconx-gray-600: #4b5563;
+  --euconx-gray-700: #374151;
+  --euconx-gray-800: #1f2937;
+  --euconx-gray-900: #111827;
+}
+
+.dark {
+  --background: #141414;
+  --foreground: #e5e7eb;
+  --card: #1f2937;
+  --card-foreground: #e5e7eb;
+  --popover: #1f2937;
+  --popover-foreground: #e5e7eb;
+  --primary: #059669;
+  --primary-foreground: #ffffff;
+  --secondary: #10b981;
+  --secondary-foreground: #ffffff;
+  --muted: #1f2937;
+  --muted-foreground: #e5e7eb;
+  --accent: #10b981;
+  --accent-foreground: #374151;
+  --destructive: #be123c;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #1f2937;
+  --ring: rgba(255, 255, 255, 0.1);
+  --chart-1: #84cc16;
+  --chart-2: #fbbf24;
+  --chart-3: #ef4444;
+  --chart-4: #3b82f6;
+  --chart-5: #9333ea;
+  --sidebar: #1f2937;
+  --sidebar-foreground: #e5e7eb;
+  --sidebar-primary: #059669;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #10b981;
+  --sidebar-accent-foreground: #374151;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: rgba(255, 255, 255, 0.1);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Modern EuConX utility classes */
+@layer utilities {
+  .text-euconx-orange {
+    color: var(--euconx-orange);
+  }
+  .text-euconx-navy {
+    color: var(--euconx-navy);
+  }
+  .text-euconx-red {
+    color: var(--euconx-red);
+  }
+  .bg-euconx-orange {
+    background-color: var(--euconx-orange);
+  }
+  .bg-euconx-orange-light {
+    background-color: var(--euconx-orange-light);
+  }
+  .bg-euconx-navy {
+    background-color: var(--euconx-navy);
+  }
+  .bg-euconx-navy-light {
+    background-color: var(--euconx-navy-light);
+  }
+  .bg-euconx-red {
+    background-color: var(--euconx-red);
+  }
+  .border-euconx-orange {
+    border-color: var(--euconx-orange);
+  }
+  .hover\:bg-euconx-orange-dark:hover {
+    background-color: var(--euconx-orange-dark);
+  }
+  .gradient-hero {
+    background: linear-gradient(135deg, var(--euconx-navy) 0%, var(--euconx-navy-light) 100%);
+  }
+
+  /* Added new utility classes for cutting-edge design effects */
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+
+  .scarcity-badge {
+    animation: scarcity-pulse 1.5s ease-in-out infinite;
+  }
+
+  .bg-grid-pattern {
+    background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.15) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+
+  /* Enhanced utility classes for FAQ confidence-building design */
+  .trust-indicator {
+    background: linear-gradient(135deg, var(--primary) 0%, #f59e0b 100%);
+    box-shadow: 0 4px 14px 0 rgba(217, 119, 6, 0.25);
+  }
+
+  .confidence-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .confidence-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-color: var(--primary);
+  }
+
+  /* About Us page specific styles */
+  .team-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -3px rgba(220, 38, 38, 0.1), 0 4px 6px -2px rgba(220, 38, 38, 0.05);
+    border-color: var(--primary);
+  }
+
+  .expertise-badge {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--primary-foreground);
+  }
+
+  .timeline-milestone {
+    transition: all 0.3s ease;
+  }
+
+  .timeline-milestone:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* EKR project-specific utility classes for confidence-building design */
+  .ekr-project-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ekr-project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(5, 150, 105, 0.1), 0 10px 10px -5px rgba(5, 150, 105, 0.04);
+    border-color: var(--primary);
+  }
+
+  .turkish-supplier-trust {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: white;
+    font-weight: 600;
+  }
+
+  .energy-savings-badge {
+    background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
+    color: white;
+    font-weight: 600;
+  }
+
+  .certification-badge {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: white;
+    font-weight: 600;
+  }
+
+  .project-metric-highlight {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* Added modern animations for enhanced user engagement */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(8, 145, 178, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(8, 145, 178, 0);
+  }
+}
+
+@keyframes scarcity-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modern card hover effects */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

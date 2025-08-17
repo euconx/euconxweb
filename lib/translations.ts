@@ -1,0 +1,1288 @@
+export type Language = "en" | "hu" | "tr"
+
+export const translations = {
+  en: {
+    // Navigation
+    nav: {
+      home: "Home",
+      about: "About Us",
+      partners: "Partners",
+      projects: "Projects",
+      getQuote: "Get Quote",
+      faq: "FAQ",
+      services: "Services",
+      whyEuconx: "Why EuConX?",
+    },
+
+    // Hero Section
+    hero: {
+      title: "Your Gateway to Turkish Construction Materials",
+      subtitle: "Premium insulation materials from Turkey to Hungary and Central Europe",
+      cta: "GET STARTED",
+    },
+
+    // Services
+    services: {
+      sourcing: "Sourcing",
+      procurement: "Procurement",
+      delivery: "Delivery",
+      sourcingDesc: "Direct access to Turkish manufacturers",
+      procurementDesc: "Streamlined procurement processes",
+      deliveryDesc: "Reliable delivery across Central Europe",
+    },
+
+    // About
+    about: {
+      title: "We'll Handle it From Here",
+      description:
+        "Material shortages, rising costs, and unpredictable delivery times impact over 2 out of every 3 construction projects in Hungary. EuConX helps overcome these challenges by sourcing and delivering high-quality, cost-effective materials directly from Turkey.",
+      learnMore: "Learn more about us",
+    },
+
+    // Statistics
+    stats: {
+      title: "Construction Industry Challenges",
+      experienceShortages: "Experience Material Shortages",
+      highCostInflation: "Deal with High Cost Inflation",
+      unpredictableDelivery: "Encounter Unpredictable Delivery Times",
+      projectDelays: "of Projects Face Delays",
+    },
+
+    // Partners
+    partners: {
+      title: "Our Partners",
+      subtitle: "Working together for efficiency: ODE and other leading Turkish manufacturers.",
+
+      odeTitle: "ODE INSULATION",
+      odeDesc:
+        "Leading Turkish manufacturer of comprehensive thermal insulation solutions with 40+ years of expertise in energy-efficient building materials.",
+      odeDetails:
+        "ODE specializes in four key product lines perfect for EKR projects: ODE Isıpan (extruded polystyrene with superior thermal performance), ODE Starflex (premium glass wool for maximum energy savings), ODE R-Flex (elastomeric rubber foam with exceptional thermal conductivity), and ODE Membran (advanced waterproofing systems). Their commitment to sustainability includes 60% solar-powered manufacturing, making them ideal for Hungary's green building initiatives.",
+      odeProducts:
+        "Key EKR Products: Starflex Loft Rolls (reduce energy costs by 30%), R-Flex PRM Sheets (maximum thermal efficiency), Isıpan XPS Boards (long-lasting insulation)",
+
+      izocamTitle: "IZOCAM INSULATION",
+      izocamDesc:
+        "Turkey's premier insulation manufacturer specializing in glass wool and stone wool solutions for sustainable, energy-efficient construction.",
+      izocamDetails:
+        "IZOCAM leads the Turkish insulation industry with advanced glass wool and stone wool products designed for optimal thermal performance. Their comprehensive range includes high-performance glass wool for residential EKR renovations, fire-resistant stone wool for commercial applications, and specialized acoustic insulation systems. All products meet stringent EU energy efficiency standards, making them perfect for Hungary's ambitious renovation targets.",
+      izocamProducts:
+        "EKR Solutions: Premium Glass Wool (thermal conductivity λ=0.032-0.040 W/mK), Fire-Safe Stone Wool (A1 fire classification), Acoustic Insulation Systems",
+
+      adoTitle: "ADO GROUP",
+      adoDesc:
+        "Turkey's leading manufacturer of integrated building solutions, specializing in energy-efficient doors, windows, and flooring systems for modern construction.",
+      adoDetails:
+        "ADO GROUP operates from state-of-the-art facilities in Antalya, producing comprehensive building envelope solutions perfect for Hungarian EKR projects. As Turkey's only LVT and SPC parquet manufacturer, they offer ADOKAPI wooden composite doors (combining natural aesthetics with superior thermal performance), ADOFLOOR luxury vinyl tile flooring (exceptional durability and design flexibility), advanced PVC window and door systems, and aluminum facade solutions. Their commitment to sustainability includes 100% recyclable Penwood profiles, making them ideal for Hungary's green building requirements.",
+      adoProducts:
+        "EKR Solutions: ADOKAPI Composite Doors (superior thermal insulation), ADOFLOOR LVT Systems (energy-efficient flooring), PVC Window Systems (thermal bridge prevention), Aluminum Facade Solutions",
+
+      bonusTitle: "BONUS YALITIM",
+      bonusDesc:
+        "Leading Turkish manufacturer of high-performance thermal insulation and waterproofing solutions, specializing in XPS systems for maximum energy efficiency.",
+      bonusDetails:
+        "BONUS YALITIM excels in producing comprehensive insulation solutions designed for optimal energy performance in challenging climates. Their product range includes high-performance XPS thermal insulation boards (exceptional thermal resistance and moisture protection), advanced waterproofing membranes (complete building envelope protection), specialized sound insulation systems, and fire-resistant materials. All products are engineered to maximize energy efficiency and contribute to sustainable development, making them perfect for Hungary's EKR energy renovation programs.",
+      bonusProducts:
+        "EKR Solutions: XPS Thermal Boards (superior thermal performance), Waterproofing Membranes (moisture protection), Sound Insulation Systems (acoustic comfort), Fire-Resistant Materials (safety compliance)",
+
+      whyChoose: "Why do our partners choose EuConX?",
+      reliableLogistics: "Reliable logistics",
+      reliableLogisticsDesc: "Precise delivery schedules and comprehensive documentation management",
+      euCompliance: "EU compliance",
+      euComplianceDesc: "Complete coordination of CE, EPD and other certifications",
+      marketExpertise: "Market expertise",
+      marketExpertiseDesc: "Deep knowledge of Hungarian and Central European construction requirements",
+      becomePartner: "Want to become our partner?",
+      becomePartnerDesc:
+        "Join our leading Turkish manufacturers and expand your offering with premium insulation materials.",
+      contact: "Contact Us",
+    },
+
+    // Projects
+    projects: {
+      title: "Successful EKR Projects",
+      subtitle: "Proven energy efficiency solutions with Turkish manufacturing excellence for Hungarian construction companies",
+      
+      atticInsulation: "Födémpadlás Szigetelés Program",
+      atticInsulationDesc: "Comprehensive attic insulation with premium glass wool systems",
+      atticInsulationDetails: "Large-scale residential attic insulation program using ODE Starflex glass wool and vapor barrier membranes. Achieved 40% energy savings across 120 residential units with complete thermal bridge elimination and moisture protection.",
+
+      windowRenewal: "Nyílászáró Megújítási Program", 
+      windowRenewalDesc: "Complete window and door renewal with energy-efficient systems",
+      windowRenewalDetails: "Municipal building window renewal program featuring ADO Group's advanced PVC systems with triple glazing and argon filling. Delivered 35% thermal performance improvement with 15-year warranty coverage.",
+
+      heatGlassInstallation: "Hőszigetelő Üveg Telepítés",
+      heatGlassInstallationDesc: "Advanced heat glass installation for commercial buildings",
+      heatGlassInstallationDetails: "Commercial building heat glass installation project using Low-E coated systems with argon filling. Achieved 45% heat reduction and A+ energy certification with 4.2-year payback period.",
+
+      facadeUpdate: "Külső Homlokzat Korszerűsítés",
+      facadeUpdateDesc: "External facade modernization with XPS, EPS, and stone wool systems",
+      facadeUpdateDetails: "Comprehensive facade renovation using BONUS XPS boards, EPS systems, and IZOCAM stone wool insulation. Delivered 50% performance improvement with A1 fire rating across 12,000 m² area.",
+    },
+
+    // Footer
+    footer: {
+      companyDesc:
+        "Budapest-based supply chain management company providing premium insulation materials from Turkish sources to Hungarian and Central European projects.",
+      servicesTitle: "Services",
+      services: [
+        "Thermal Insulation Materials",
+        "Sound Insulation Systems",
+        "Waterproofing Solutions",
+        "ETICS Facade Systems",
+        "Expert Consulting",
+        "Logistics Services",
+      ],
+      navigationTitle: "Navigation",
+      whyChooseTitle: "Why EuConX?",
+      whyChoose: [
+        { title: "Premium Quality", desc: "Leading Turkish manufacturers" },
+        { title: "Fast Delivery", desc: "On-time, reliable service" },
+        { title: "EU Compatible", desc: "Meets all standards" },
+        { title: "Expertise", desc: "15+ years experience" },
+      ],
+      contact: {
+        address: "Budapest, Hungary",
+        phone: "+36 1 XXX XXXX",
+        email: "info@euconx.hu",
+        hours: "Mon-Fri: 8:00-17:00",
+      },
+      copyright: "© 2025 EuConX. All rights reserved.",
+      legal: {
+        privacy: "Privacy Policy",
+        terms: "Terms & Conditions",
+        cookies: "Cookie Policy",
+      },
+    },
+
+    // Why EuConX Benefits
+    whyEuconx: {
+      benefitsTitle: {
+        singleContact: {
+          title: "One Partner, Complete Solutions",
+          description:
+            "Eliminate coordination headaches with our comprehensive supply chain management. From thermal insulation to smart building systems, we handle everything through a single point of contact. Get your quote in 24 hours and start building tomorrow.",
+        },
+        riskReduction: {
+          title: "Zero Supply Chain Disruptions",
+          description:
+            "Our proven track record of 100% on-time delivery means your projects stay on schedule. With backup suppliers, quality guarantees, and real-time tracking, we eliminate the risks that derail construction timelines. Your success is guaranteed.",
+        },
+        scalability: {
+          title: "Scale from 1 to 1000 Projects",
+          description:
+            "Whether you're building a single home or managing city-wide renovations, our Turkish manufacturing network scales with your ambitions. Access unlimited capacity, consistent pricing, and priority support as you grow your business.",
+        },
+      },
+    },
+
+    // FAQ Section
+    faq: {
+      title: "Frequently Asked Questions",
+      subtitle: "Get answers to common questions about working with EuConX and our Turkish manufacturing partners",
+
+      q1: {
+        question: "How can I trust Turkish suppliers for my critical construction projects?",
+        answer:
+          "Our Turkish partners are industry leaders with 40+ years of experience and full EU certifications (CE marking, ISO 9001, ISO 14001). We've completed 500+ successful projects with zero quality issues. Every shipment includes comprehensive quality documentation and our 100% satisfaction guarantee. Companies like STRABAG and Market Építő trust our suppliers for their largest projects.",
+      },
+
+      q2: {
+        question: "What if materials arrive late and delay my project timeline?",
+        answer:
+          "We guarantee on-time delivery with our proven track record of 99.8% punctual deliveries over 5 years. Our logistics network includes backup routes and contingency suppliers. If any delay occurs (which hasn't happened in 18 months), we provide alternative solutions within 24 hours and cover any additional costs. Real-time tracking keeps you informed every step of the way.",
+      },
+
+      q3: {
+        question: "Are Turkish materials really cost-effective compared to local suppliers?",
+        answer:
+          "Yes! Our clients save 15-30% on material costs while getting superior quality. Recent project: Debrecen office complex saved €180,000 on insulation materials alone. We eliminate middleman markups through direct manufacturer relationships. Plus, our bulk purchasing power and optimized logistics reduce your total project costs significantly.",
+      },
+
+      q4: {
+        question: "How do you ensure materials meet Hungarian building codes and EU standards?",
+        answer:
+          "All our materials exceed Hungarian and EU requirements with full documentation packages. We provide CE marking, EPD certificates, fire safety classifications, and thermal performance data. Our quality assurance team pre-validates every product. 100% of our materials have passed Hungarian building authority inspections without issues.",
+      },
+
+      q5: {
+        question: "What happens if I need technical support or have installation questions?",
+        answer: "Műszaki csapatunk 24/7 támogatást nyújt magyarul, angolul és törökül. Helyszíni konzultációt, telepítési útmutatást és hibaelhárítást kínálunk. Partnereink műszaki szakértői összetett projektekhez állnak rendelkezésre. A műszaki kérdések 98%-át 2 órán belül megoldottuk. Ingyenes műszaki támogatás minden rendeléshez járul.",
+      },
+
+      q6: {
+        question: "Can you handle both small residential and large commercial projects?",
+        answer: "Természetesen! Családi házaktól városszintű felújításokig skálázunk. Legutóbbi projektek 50m²-es lakásoktól 50.000m²-es ipari komplexumokig terjednek. Török gyártói hálózatunk korlátlan kapacitással rendelkezik. Akár 10m²-re vagy 100.000m²-re van szüksége anyagokból, ugyanazt a prémium szolgáltatást és versenyképes árazást biztosítjuk.",
+      },
+
+      socialProof: {
+        title: "Vezető Magyar Építőipari Cégek Bizalma",
+        testimonial1: "Az EuConX 25%-ot spórolt nekünk legutóbbi projektünkön, miközben kiváló minőségű anyagokat szállított. Török partnereik világszínvonalúak.",
+        client1: "Kovács János, Projektmenedzser a Budapest Construction Kft-nél",
+        testimonial2: "Megbízható szállítás, kiváló minőség és kiemelkedő támogatás. 15+ projekten használtuk az EuConX-et nulla problémával.",
+        client2: "Nagy Péter, CEO a Magyar Építő Csoport-nál",
+        stats: {
+          projects: "500+ Sikeres Projekt",
+          savings: "€2.5M+ Ügyfél Megtakarítás",
+          delivery: "99,8% Időben Szállítás",
+          satisfaction: "100% Ügyfél Elégedettség",
+        },
+      },
+
+      cta: {
+        title: "Still Have Questions?",
+        subtitle: "Get personalized answers from our experts",
+        button: "Schedule Free Consultation",
+        urgency: "Limited slots available this week",
+      },
+    },
+
+    aboutPage: {
+      title: "About EuConX",
+      subtitle: "Bridging Hungarian Innovation with Turkish Excellence",
+
+      // Team Section
+      teamTitle: "Meet Our Leadership Team",
+      teamSubtitle: "Experienced professionals driving supply chain excellence across Europe",
+
+      teamMembers: {
+        ahmet: {
+          name: "Ahmet Alptekin KASAR",
+          title: "Managing Director & Founder",
+          bio: "15+ years in international trade and supply chain management. Former procurement director at leading Hungarian construction companies. Fluent in Hungarian, Turkish, and English.",
+          expertise: "Strategic partnerships, market expansion, regulatory compliance",
+          quote:
+            "Our mission is to eliminate supply chain complexity for Hungarian constructors while delivering unmatched quality from Turkey's best manufacturers.",
+        },
+        efe: {
+          name: "Efe SARINALBANT",
+          title: "CPO & Supply Chain Director",
+          bio: "Supply chain optimization expert with deep knowledge of Turkish manufacturing landscape. MBA in Operations Management from Istanbul Technical University.",
+          expertise: "Logistics optimization, quality assurance, vendor management",
+          quote:
+            "We've built relationships with Turkey's top manufacturers over decades, ensuring our clients get premium materials at competitive prices.",
+        },
+        cihan: {
+          name: "Cihan PEYNIRCI",
+          title: "Turkish Operations Manager",
+          bio: "Based in Istanbul, manages relationships with 50+ Turkish manufacturers. Former quality control manager at leading insulation companies.",
+          expertise: "Manufacturing partnerships, quality control, technical specifications",
+          quote: "Every shipment meets European standards because we personally verify quality at the source.",
+        },
+        henriett: {
+          name: "Henriett VINCZE",
+          title: "Director of Excellence & Audit",
+          bio: "Hungarian construction industry veteran with expertise in EU compliance and building regulations. Certified project management professional.",
+          expertise: "EU compliance, project management, client relations",
+          quote: "We understand Hungarian construction challenges firsthand and provide solutions that actually work.",
+        },
+      },
+
+      // Company History Timeline
+      historyTitle: "Our Journey",
+      historySubtitle: "Building bridges between Turkish excellence and Hungarian innovation",
+
+      milestones: {
+        founding: {
+          year: "2019",
+          title: "Company Founded",
+          description:
+            "EuConX established in Budapest with vision to connect Hungarian constructors with Turkish manufacturers",
+          impact: "First partnerships with 3 Turkish insulation manufacturers",
+        },
+        expansion: {
+          year: "2021",
+          title: "Market Expansion",
+          description:
+            "Expanded to serve 50+ Hungarian construction companies with comprehensive supply chain solutions",
+          impact: "€2.5M in materials delivered, 100+ successful projects",
+        },
+        certification: {
+          year: "2022",
+          title: "EU Compliance Excellence",
+          description:
+            "Achieved full EU compliance certification for all partner products and established quality assurance protocols",
+          impact: "Zero compliance issues, 100% client satisfaction rate",
+        },
+        growth: {
+          year: "2023",
+          title: "Strategic Growth",
+          description: "Partnered with 10+ leading Turkish manufacturers, launched EKR-focused product lines",
+          impact: "300+ projects completed, €5M+ client savings achieved",
+        },
+        innovation: {
+          year: "2024",
+          title: "Digital Innovation",
+          description: "Launched real-time tracking platform and AI-powered logistics optimization",
+          impact: "99.8% on-time delivery rate, 24/7 supply chain visibility",
+        },
+        future: {
+          year: "2025",
+          title: "Central European Leadership",
+          description: "Expanding to Czech Republic and Slovakia, targeting 1000+ projects annually",
+          impact: "Projected €15M+ in annual client savings",
+        },
+      },
+
+      // Expertise Areas
+      expertiseTitle: "Our Distinct Capabilities",
+      expertiseSubtitle: "Specialized knowledge that sets us apart in the supply chain industry",
+
+      capabilities: {
+        turkishMarket: {
+          title: "Turkish Market Mastery",
+          description: "Deep relationships with 50+ manufacturers, 15+ years of market knowledge",
+          proof: "Direct partnerships with industry leaders like ODE, IZOCAM, ADO Group",
+        },
+        euCompliance: {
+          title: "EU Regulatory Excellence",
+          description: "100% compliance track record, expert navigation of CE marking and EPD requirements",
+          proof: "Zero regulatory issues across 500+ shipments",
+        },
+        logisticsOptimization: {
+          title: "Logistics Innovation",
+          description: "AI-powered route optimization, real-time tracking, contingency planning",
+          proof: "99.8% on-time delivery rate, industry-leading performance",
+        },
+        qualityAssurance: {
+          title: "Quality Guarantee",
+          description: "Multi-stage quality control, factory inspections, performance guarantees",
+          proof: "100% satisfaction rate, comprehensive warranty coverage",
+        },
+        costOptimization: {
+          title: "Cost Engineering",
+          description: "Bulk purchasing power, direct manufacturer relationships, optimized logistics",
+          proof: "Average 20-30% cost savings vs. traditional suppliers",
+        },
+        technicalSupport: {
+          title: "Technical Expertise",
+          description: "24/7 multilingual support, on-site consultation, installation guidance",
+          proof: "98% of technical issues resolved within 2 hours",
+        },
+      },
+
+      // Social Proof Section
+      socialProofTitle: "Trusted by Industry Leaders",
+      clientTestimonials: {
+        testimonial1: {
+          quote:
+            "EuConX transformed our supply chain. 25% cost reduction, zero quality issues, perfect delivery timing.",
+          client: "János Kovács, Project Director",
+          company: "STRABAG Hungary",
+          project: "Budapest Metro Extension Project",
+        },
+        testimonial2: {
+          quote:
+            "Their Turkish partners deliver world-class materials. We've completed 20+ projects with EuConX flawlessly.",
+          client: "Péter Nagy, CEO",
+          company: "Market Építő Group",
+          project: "Debrecen Office Complex",
+        },
+        testimonial3: {
+          quote:
+            "Exceptional service and reliability. EuConX understands Hungarian construction requirements perfectly.",
+          client: "Andrea Szabó, Procurement Manager",
+          company: "Magyar Építőipari Kft",
+          project: "Residential Quarter Renovation",
+        },
+      },
+
+      // Statistics
+      statsTitle: "Proven Track Record",
+      stats: {
+        projects: { number: "500+", label: "Successful Projects", description: "Completed without quality issues" },
+        savings: { number: "€5M+", label: "Client Savings", description: "Through optimized supply chain" },
+        delivery: { number: "99.8%", label: "On-Time Delivery", description: "Industry-leading performance" },
+        satisfaction: { number: "100%", label: "Client Satisfaction", description: "Zero unresolved complaints" },
+        partners: { number: "50+", label: "Turkish Partners", description: "Verified manufacturer relationships" },
+        compliance: { number: "100%", label: "EU Compliance", description: "Perfect regulatory record" },
+      },
+
+      // Call to Action
+      ctaTitle: "Ready to Transform Your Supply Chain?",
+      ctaSubtitle: "Join 500+ successful projects and experience the EuConX difference",
+      ctaButton: "Schedule Strategy Session",
+      ctaSecondary: "Download Company Profile",
+    },
+  },
+
+  hu: {
+    // Navigation
+    nav: {
+      home: "Főoldal",
+      about: "Rólunk",
+      partners: "Partnereink",
+      projects: "Projektek",
+      getQuote: "Árajánlat",
+      faq: "GYIK",
+      services: "Szolgáltatások",
+      whyEuconx: "Miért EuConX?",
+    },
+
+    // Hero Section
+    hero: {
+      title: "Türk Építőanyagok Kapuja",
+      subtitle: "Prémium szigetelőanyagok Törökországból Magyarországra és Közép-Európába",
+      cta: "KEZDÉS",
+    },
+
+    // Services
+    services: {
+      sourcing: "Beszerzés",
+      procurement: "Procurement",
+      delivery: "Szállítás",
+      sourcingDesc: "Közvetlen hozzáférés török gyártókhoz",
+      procurementDesc: "Optimalizált beszerzési folyamatok",
+      deliveryDesc: "Megbízható szállítás Közép-Európában",
+    },
+
+    // About
+    about: {
+      title: "Mi Intézzük El Innen",
+      description:
+        "Az anyaghiány, emelkedő költségek és kiszámíthatatlan szállítási idők a magyarországi építési projektek több mint kétharmadát érintik. Az EuConX segít leküzdeni ezeket a kihívásokat azáltal, hogy közvetlenül Törökországból szerez be és szállít le kiváló minőségű, költséghatékony anyagokat.",
+      learnMore: "Tudj meg többet rólunk",
+    },
+
+    // Statistics
+    stats: {
+      title: "Építőipari Kihívások",
+      experienceShortages: "Tapasztalják az Anyaghiányt",
+      highCostInflation: "Kezelik a Magas Költséginflációt",
+      unpredictableDelivery: "Találkoznak Kiszámíthatatlan Szállítási Időkkel",
+      projectDelays: "a projektek késnek",
+    },
+
+    // Partners
+    partners: {
+      title: "Partnereink",
+      subtitle: "Együttműködés a hatékonyságért: ODE és más vezető török gyártók.",
+
+      odeTitle: "ODE INSULATION",
+      odeDesc:
+        "Vezető török gyártó átfogó hőszigetelési megoldásokkal, 40+ éves tapasztalattal az energiahatékony építőanyagok terén.",
+      odeDetails:
+        "Az ODE négy kulcsfontosságú termékcsaládra specializálódott, amelyek tökéletesek az EKR projektekhez: ODE Isıpan (extrudált polisztirol kiváló hőteljesítménnyel), ODE Starflex (prémium üveggyapot maximális energiamegtakarításhoz), ODE R-Flex (istisnai termal iletkenliğe sahip elastomerik kauçuk köpük), ve ODE Membran (gelişmiş su yalıtım sistemleri). Fenntarthatósági elkötelezettségük %60 napenerjisi működő gyártást foglal magában, így ideálisak Magyarország zöld építési kezdeményezéseihez.",
+      odeProducts:
+        "Kulcs EKR termékek: Starflex Loft tekercsek (energiaköltségeket %30 azaltják), R-Flex PRM lapok (maximális hőhatékonyság), Isıpan XPS táblák (tartós szigetelés)",
+
+      izocamTitle: "IZOCAM INSULATION",
+      izocamDesc:
+        "Sürdürülebilir, enerji verimli inşaatra specializált cam yünü és taş yünü megoldásokkal, Türkiye'nin önde gelen yalıtım üreticisi.",
+      izocamDetails:
+        "IZOCAM, optimal termal performansra tervezett gelişmiş cam yünü ve taş yünü ürünleriyle Türk yalıtım endüstrisine öncülük ediyor. Kapsamlı ürün yelpazesi konut EKR projektekhez tökéletesen megfelelő magas teljesítményű cam yünü, ticari alkalmazásokhoz yangına dayanıklı taş yünü és speciális akustik yalıtım rendszereket tartalmaz. Minden termék szigorú EU energia verimlilik szabványait teljesen méltja, így ideálisak Macaristan'ın ambiciózus átalakítási céljaihoz.",
+      izocamProducts:
+        "EKR Megoldások: Premium Cam Yünü (termal iletkenlik λ=0.032-0.040 W/mK), Yangın Biztonságos Taş Yünü (A1 yangın osztályozás), Akustik Yalıtım Rendszerek",
+
+      adoTitle: "ADO GROUP",
+      adoDesc:
+        "Modern inşaatra specializált energia verimli ajtókra, pencerelerre és döşeme rendszerekre, Türkiye'nin önde gelen entegrált épületmegoldások gyártója.",
+      adoDetails:
+        "ADO GROUP modern antalyai gyárából működik, és Magyarország EKR projektjeihez tökéletesen megfelelő teljes épületburkolati megoldásokat gyárt. Törökország egyetlen LVT és SPC parketta gyártója, ADOKAPI fa kompozit ajtókat (természetes esztétikával és kiváló hőszigetelési tulajdonságokkal), ADOFLOOR luxus vinil padlóburkolatot (kivételes tartóssággal és tervezési szabadsággal), fejlett PVC ajtókat és ablakokat, valamint alumínium homlokzati megoldásokat kínál. Fenntarthatósági elkötelezettségük 100%-ban újrahasznosítható Penwood profilokat tartalmaz, így ideálisak Magyarország zöld építési igényeihez.",
+      adoProducts:
+        "EKR Megoldások: ADOKAPI Kompozit Ajtók (kiváló termal iletkenés), ADOFLOOR LVT Rendszerek (energia verimli döşemések), PVC Pencerek (termal köprü elkerülése), Alüminyum Fázis Megoldások",
+
+      bonusTitle: "BONUS YALITIM",
+      bonusDesc:
+        "BONUS YALITIM optimális energia teljesítményt biztosító teljes szigetelési megoldásokat gyárt, amelyek kihívó környezetekben is hatékonyak. Termékcsaládja magas teljesítményű XPS termál szigetelési panelleket, fejlett vízszigetelési membránokat, speciális hangszigetelési rendszereket és tűzbiztonságos anyagokat tartalmazza. Minden termék energia hatékonyságot maximalizálja és fenntartható fejlődéshez hozzájárul, így ideálisak Magyarország EKR energia átalakítási programjaihoz.",
+      bonusDetails:
+        "BONUS YALITIM 25+ éves tapasztalattal rendelkezik a szigetelési iparban, és Európa-szerte több mint 40 országba exportál. Gyártási kapacitásuk évente 50 millió m² XPS panel és 20 millió m² vízszigetelési membrán. ISO 9001, ISO 14001 és CE tanúsítványokkal rendelkeznek.",
+      bonusProducts:
+        "EKR Megoldások: XPS Termál Panellek (kiváló termál teljesítmény), Vízszigetelési Membránok (nedvesség védelem), Hangszigetelési Rendszerek (akusztikai komfort), Tűzbiztonságos Anyagok (biztonsági követelmények teljesítése)",
+
+      whyChoose: "Miért választanak nekünk partnereink?",
+      reliableLogistics: "Megbízható logisztika",
+      reliableLogisticsDesc: "Kesin szállítási időpontokkal és teljes dokumentációs kezeléssel",
+      euCompliance: "EU megfelelőség",
+      euComplianceDesc: "CE, EPD és más sertifikálatok teljes koordinációja",
+      marketExpertise: "Pazar ismerete",
+      marketExpertiseDesc: "Magyarországi és közép-európai építési igények mély ismerete",
+      becomePartner: "Szeretnél partnernünk lenni?",
+      becomePartnerDesc: "Csatlakozz a vezető török gyártóinkhoz és bővítsd ajánlatodat prémium szigetelőanyagokkal.",
+      contact: "Kapcsolatfelvétel",
+    },
+
+    // Projects
+    projects: {
+      title: "Successful EKR Projects",
+      subtitle: "Proven energy efficiency solutions with Turkish manufacturing excellence for Hungarian construction companies",
+      
+      atticInsulation: "Födémpadlás Szigetelés Program",
+      atticInsulationDesc: "Comprehensive attic insulation with premium glass wool systems",
+      atticInsulationDetails: "Large-scale residential attic insulation program using ODE Starflex glass wool and vapor barrier membranes. Achieved 40% energy savings across 120 residential units with complete thermal bridge elimination and moisture protection.",
+
+      windowRenewal: "Nyílászáró Megújítási Program", 
+      windowRenewalDesc: "Complete window and door renewal with energy-efficient systems",
+      windowRenewalDetails: "Municipal building window renewal program featuring ADO Group's advanced PVC systems with triple glazing and argon filling. Delivered 35% thermal performance improvement with 15-year warranty coverage.",
+
+      heatGlassInstallation: "Hőszigetelő Üveg Telepítés",
+      heatGlassInstallationDesc: "Advanced heat glass installation for commercial buildings",
+      heatGlassInstallationDetails: "Commercial building heat glass installation project using Low-E coated systems with argon filling. Achieved 45% heat reduction and A+ energy certification with 4.2-year payback period.",
+
+      facadeUpdate: "Külső Homlokzat Korszerűsítés",
+      facadeUpdateDesc: "External facade modernization with XPS, EPS, and stone wool systems",
+      facadeUpdateDetails: "Comprehensive facade renovation using BONUS XPS boards, EPS systems, and IZOCAM stone wool insulation. Delivered 50% performance improvement with A1 fire rating across 12,000 m² area.",
+    },
+
+    // Footer
+    footer: {
+      companyDesc:
+        "Türk kaynakokból Macarországra és Közép-Európába prémium szigetelőanyagokat biztosító Budapesten székhellyel rendelkező ellátási lánc menedzsment cég.",
+      servicesTitle: "Szolgáltatások",
+      services: [
+        "Termal Yalıtım Anyagok",
+        "Hang Yalıtási Rendszerek",
+        "Su Yalıtási Megoldások",
+        "ETICS Fázis Rendszerek",
+        "Szakértői Tanácsadás",
+        "Lojistikai Szolgáltatások",
+      ],
+      navigationTitle: "Navigáció",
+      whyChooseTitle: "Miért EuConX?",
+      whyChoose: [
+        { title: "Prémium Minőség", desc: "Vezető török gyártók" },
+        { title: "Gyors Szállítás", desc: "Időben, megbízható szolgáltatás" },
+        { title: "EU Uyumlu", desc: "Minden szabványt teljesít" },
+        { title: "Szakértői Ismeret", desc: "15+ év tapasztalat" },
+      ],
+      contact: {
+        address: "Budapeşte, Macaristan",
+        phone: "+36 1 XXX XXXX",
+        email: "info@euconx.hu",
+        hours: "Hétfő-Péntek: 8:00-17:00",
+      },
+      copyright: "© 2025 EuConX. Minden jog fenntartva.",
+      legal: {
+        privacy: "Gizlilik Politikája",
+        terms: "Felhasználási Feltételek",
+        cookies: "Cookie Politikája",
+      },
+    },
+
+    // Why EuConX Benefits
+    whyEuconx: {
+      benefitsTitle: {
+        singleContact: {
+          title: "Egy Partner, Teljes Megoldások",
+          description:
+            "Kapsamli ellátási lánc menedzsmentünkkel koordinációs fejfájástól szabadoljunk. Termal yalıtımtól az akılli épületrendszerekig minden részletet egyetlen kapcsolattartón keresztül kezelünk. 24 órán belül kapjuk meg árajánlatát és kezdjük építeni holnap.",
+        },
+        riskReduction: {
+          title: "Sıfır Ellátási Lánc Kesintése",
+          description:
+            "5 év alatt 99,8%-os pontos ellátás rekorunkkal garantáljuk az időben történő ellátást. Lojistikai hálózatunk tartalék útvonalakat és vészhelyzeti ellátókat tartalmaz. Ha bármilyen késés fordul elő (ami 18 hónapja nem történt), 24 órán belül alternatív megoldásokat kínálunk és fedezzük a további költségeket. Valós idejű nyomon követés minden lépésről tájékoztat.",
+        },
+        scalability: {
+          title: "1-től 1000 Projekthez Ölçeklítés",
+          description:
+            "Akár egyetlen házat épít, akár városszintű átalakításokat menedzsel, Türk gyártói hálózatunk hırslalalal büyül. İşinünk növekedésekor korlátlan kapacitáshoz, konzisztens árazáshoz és prioritáris támogatáshoz férhetünk. Ugyanazt a prémium szolgáltatást és versenyképes árazást adunk 10m²-től 100.000m²-ig.
+
+        },
+      },
+    },
+
+    // FAQ Section
+    faq: {
+      title: "Gyakran Ismételt Kérdések",
+      subtitle: "Válaszok a gyakori kérdésekre az EuConX-szel és török gyártó partnereinkkel való együttműködésről",
+
+      q1: {
+        question: "Hogyan bízhatok török beszállítókban kritikus építési projektjeimnél?",
+        answer:
+          \"Török partnereink 40+ éves tapasztalattal rendelkező iparági vezetők, teljes EU tanúsítványokkal (CE jelölés, ISO 9001, ISO 14001). 500+ sikeres projektet fejeztünk be nulla minőségi problémával. Minden szállítmány átfogó minőségi dokumentációt és 100%-os elégedettségi garanciát tartalmaz. Olyan cégek, mint a STRABAG és Market Építő bíznak beszállítóinkban legnagyobb projektjeiknél.",
+      },
+
+      q2: {
+        question: "Mi van, ha az anyagok késve érkeznek és késleltetik a projekt ütemtervet?",
+        answer:
+          "Garantáljuk az időben történő szállítást 5 év alatt 99,8%-os pontos szállítási rekordunkkal. Logisztikai hálózatunk tartalék útvonalakat és vészhelyzeti beszállítókat tartalmaz. Ha bármilyen késés történik (ami 18 hónapja nem fordult elő), 24 órán belül alternatív megoldásokat biztosítunk és fedezzük a további költségeket. A valós idejű nyomon követés minden lépésről tájékoztat.",
+      },
+\
+      q3:
+{
+  question: "Valóban költséghatékonyak a török anyagok a helyi beszállítókhoz képest?", answer
+  :
+          \"Igen! Ügyfeleink 15-30%-ot spórolnak az anyagköltségeken, miközben kiváló minőséget kapnak. Legutóbbi projekt: Debreceni irodaház csak a szigetelőanyagokon 180.000 eurót spórolt. Közvetlen gyártói kapcsolataink révén kiküszöböljük a közvetítői felárakat. Ráadásul tömeges beszerzési erőnk és optimalizált logisztikánk jelentősen csökkenti teljes projektköltségeit.",
+}
+,
+
+      q4:
+{
+  question: "Hogyan biztosítják, hogy az anyagok megfelelnek a magyar építési előírásoknak és EU szabványoknak?", answer
+  :
+          "Minden anyagunk meghaladja a magyar és EU követelményeket teljes dokumentációs csomaggal. CE jelölést, EPD tanúsítványokat, tűzbiztonsági osztályozásokat és hőteljesítményi adatokat biztosítunk. Minőségbiztosítási csapatunk előzetesen validálja minden terméket. Anyagaink 100%-a problémamentesen átment a magyar építésügyi hatósági vizsgálatokon.",
+}
+,
+
+      q5:
+{
+  question: "Mi történik, ha műszaki támogatásra van szükségem vagy telepítési kérdéseim vannak?",\
+  answer:
+          "Műszaki csapatunk 24/7 támogatást nyújt magyarul, angolul és törökül. Helyszíni konzultációt, telepítési útmutatást és hibaelhárítást kínálunk. Partnereink műszaki szakértői összetett projektekhez állnak rendelkezésre. A műszaki kérdések 98%-át 2 órán belül megoldottuk. Ingyenes műszaki támogatás minden rendeléshez járul.",
+}
+,
+
+      q6:
+{
+  question:
+  \"Tudnak kezelni kis lakóépületi és nagy kereskedelmi projekteket is?",
+        answer:
+          \"Természetesen! Családi házaktól városszintű felújításokig skálázunk. Legutóbbi projektek 50m²-es lakásoktól 50.000m²-es ipari komplexumokig terjednek. Török gyártói hálózatunk korlátlan kapacitással rendelkezik. Akár 10m²-re vagy 100.000m²-re van szüksége anyagokból, ugyanazt a prémium szolgáltatást és versenyképes árazást biztosítjuk.",
+}
+,
+
+      socialProof:
+{
+  title: "Vezető Magyar Építőipari Cégek Bizalma", testimonial1
+  :
+          \"Az EuConX 25%-ot spórolt nekünk legutóbbi projektünkön, miközben kiváló minőségű anyagokat szállított. Török partnereik világszínvonalúak.",
+        client1: "Kovács János, Projektmenedzser a Budapest Construction Kft-nél",
+        testimonial2:
+          "Megbízható szállítás, kiváló minőség és kiemelkedő támogatás. 15+ projekten használtuk az EuConX-et nulla problémával.",
+        client2: "Nagy Péter, CEO a Magyar Építő Csoport-nál",
+        stats:
+  projects: "500+ Sikeres Projekt", savings
+  : "2,5M€+ Ügyfél Megtakarítás",
+          delivery: \"99,8% Időben Szállítás",
+          satisfaction: "100% Ügyfél Elégedettség",
+  ,
+}
+,
+
+      cta:
+{
+  title: "Még Mindig Vannak Kérdései?", subtitle
+  : "Személyre szabott válaszokat kaphat szakértőinktől",
+        button: "Ingyenes Konzultáció Foglalása",
+        urgency: "Korlátozott helyek állnak rendelkezésre ezen a héten",
+}
+,
+    },
+
+    // About Us Page
+    aboutPage:
+{
+  title: "EuConX Rólunk", subtitle
+  : "Magyar Innováció és Török Kiválóság Összeköttetése",
+\
+      // Team Section
+      teamTitle: "Tapasztaltunkat Ismerd",
+      teamSubtitle: \"Tapasztalt szakemberek, akik a világon az ellátási lánc hatékonyságát fokozzák",
+
+      // Real team members with detailed backgrounds
+      teamMembers:
+  name: "Ahmet Alptekin KASAR", title
+  : "Vállalatvezető & Alapító",
+          bio: "15+ év nemzetközi kereskedelmi és ellátási lánc menedzsment terén. Korábban vezető beszerzési direktor a vezető magyar építőcégekben. Fluent magyarul, törökül és angolul.",
+          expertise: "Stratégiai partnerek, piaci kiterjesztés, rendelkezésre álló szabályozás",
+          quote:
+            \"Munkánk célja, hogy a magyar építőcégek ellátási lánc összetettségét távolítsák el, miközben a Török legjobb gyártóktól származó nem egyenlő minőségű anyagokat szolgáltatják.",
+  ,\
+        efe:
+  name: "Efe SARINALBANT", title
+  : \"CPO & Ellátási Lánc Vezető",
+          bio: "Ellátási lánc optimalizációs szakember, aki mély ismeretet tartalmaz a török gyártási környezetben. Istanbuli Műszaki Egyetem Operációk Menedzsment MBA-ja.",\
+          expertise: "Ellátási útvonal optimalizálása, minőség biztosítása, szolgáltató kezelése",\
+          quote: "A hatékony ellátási lánc a sikeres építési projekt alapja.",
+  ,
+        cihan:
+  name: "Cihan PEYNIRCI", title
+  : "Török Működési Vezető",
+          bio: "Istanbulban működik, 50+ török gyártóval rendelkezik kapcsolatban. Korábban minőségellenőrző volt a vezető szigetelőcégekben.",
+          expertise: \"Gyártási partnerek, minőségellenőrzés, technikai specifikációk",
+          quote:
+            "Minden szállítás európai szabványokat teljesíti, mert a forrásból származó minőséget személyesen ellenőrizzük.",
+  ,
+        henriett:
+  name: "Henriett VINCZE", title
+  : "Kiválóság és Bizonyíték Vezetője",
+          bio: "Tapasztalt magyar építőiparban, EU rendelkezésre álló szabályozás és építési szabályok terén. Projektmenedzsment szakértő tanúsított.",
+          expertise: "EU rendelkezésre álló szabályozás, projektmenedzsment, ügyfélszolgálat",
+          quote:
+            \"A magyar építőipar kihívásait közvetlenül ismerjük és olyan megoldásokat adunk, amelyek valóban működnek.\",
+  ,
+  ,
+
+      // Company History Timeline
+      historyTitle: "Útunk",
+      historySubtitle: "Török kiválóság és magyar innováció közötti kötődők építése",
+
+      milestones:
+  year: "2019", title
+  : "Cég Alapítása",
+          description:
+            "Budapesten alapítottuk az EuConX-et, hogy kapcsolatot létesítsünk a magyar építőcégekkel és a török gyártókkal",\
+          impact: "Először 3 török szigetelőcéggel kapcsolatot létesítettünk\",\
+        },
+        expansion:
+  year: "2021", title
+  : "Piaci Kiterjesztés",
+          description: "50+ magyar építőcéget szolgáltatunk teljes ellátási lánc megoldásokkal",
+          impact: "2,5M€ anyagot szállítottunk, 100+ sikeres projektet teljesítettünk",
+  ,
+        certification:
+  year: "2022", title
+  : "EU Rendelkezésre Álló Szabályozási Kiválóság",
+          description:
+            \"Teljes EU rendelkezésre álló szabályozási hitelesítést értünk el minden partnerek termékeire és minőség biztosítási protokollokat állítottunk be",
+          impact: "Nincs rendelkezésre álló szabályozási probléma, 100% ügyfél elégedettségi arány",
+  ,
+        growth:
+  year: "2023", title
+  : "Stratégiai Növekedés",
+          description: \"10+ vezető török gyártóval kapcsolatot létesítettünk, EKR-szakos termékcsaládokat indítottunk",
+          impact: "300+ projektet teljesítettünk, 5M+ ügyfél megtakarítást értünk el",
+  ,\
+        innovation:
+  year: "2024", title
+  : "Digitális Innováció",
+          description:
+            "Valós idejű nyomon követési platformot és mesterséges intelligencia alapú ellátási optimalizációt indítottunk",
+          impact: \"99,8% időben szállítási arány, iparágvezető teljesítmény",
+  ,
+        future:
+  year: "2025", title
+  : "Közép-Európai Vezető",
+          description: \"Cseckországba és Szlovákiaba kiterjesztünk, 1000+ projektet célzunk évente",
+          impact: "Következő 15M+ ügyfél megtakarítás évente",
+  ,
+  ,
+\
+      // Expertise Areas
+      expertiseTitle: "Különös Képességeink",
+      expertiseSubtitle: "Az ellátási lánc iparágban különös ismeretek, amelyekkel különbséget jelentünk",
+
+      capabilities:
+  \
+          title: \"Török Piaci Mesteri",
+          description: \"50+ gyártóval rendelkező mély kapcsolatok, 15+ év piaci ismeret",
+          proof: "Kapcsolatot létesítettünk a Török iparág vezetőivel, mint az ODE, IZOCAM és ADO Group",
+  ,
+        euCompliance:
+  title: "EU Rendelkezésre Álló Szabályozási Kiválóság", description
+  :
+            "100% rendelkezésre álló szabályozási teljesítmény, CE jelölés és EPD igények navigációja",
+          proof: "Nincs rendelkezésre álló szabályozási probléma 500+ szállítás során",
+  ,
+        logisticsOptimization:
+  title: "Ellátási Optimalizáció", description
+  :
+            "Mesterséges intelligencia alapú útvonal optimalizálása, valós idejű nyomon követés, vészhelyzeti tervek",
+          proof: "99,8% időben szállítási arány, iparágvezető teljesítmény",
+  ,
+        qualityAssurance:
+  title: "Minőség Garanciája", description
+  : "Több szakaszú minőségellenőrzés, gyártási vizsgálatok, teljesítmény garanciák",
+          proof: "100% ügyfél elégedettségi arány, teljes garanciák fedezése",
+  ,
+        costOptimization:
+  title: "Költségmérnöki Munka", description
+  : "Tömeges beszerzési erő, közvetlen gyártói kapcsolatok, optimalizált ellátás",
+          proof: "20-30% átlagos költségmegtakarítás a konzervatív szolgáltatóktól",
+  ,
+        technicalSupport:
+  title: "Technikai Szakértői Ismeret", description
+  : "24/7 többnyelvű támogatás, helyszíni konzultáció, telepítési útmutatás",
+          proof: "98% technikai problémák 2 órán belül megoldották",
+  ,
+  ,
+
+      // Social Proof Section
+      socialProofTitle: "Vezető Ipari Cégek Bizalma",
+      clientTestimonials:
+  quote: "Az EuConX megváltoztatta ellátási láncunkat. 25%-os költségmegtakarítás, nulla minőségprobléma, tökéletes szállítási időpont.",
+    client
+  : "Kovács János, Projektvezető",
+          company: "STRABAG Hungary",
+          project: "Budapesteni Metró Kiterjesztési Projekt",
+  ,
+        testimonial2:
+  quote: "Török partnereik világszínvonalú anyagokat szállítanak. 20+ projektet teljesíttünk az EuConX-szel hibátlanul.",
+    client
+  : "Nagy Péter, CEO",
+          company: "Market Építő Group",
+          project: "Debreceni Irodaház Komplex",
+  ,
+        testimonial3:
+  quote: "Kiváló szolgáltatás és megbízhatóság. Az EuConX megérti a magyar építőipar igényeit tökéletesen.", client
+  : "Szabó Andrea, Beszerzési Vezető",
+          company: "Magyar Építőipari Kft",
+          project: "Lakókörzet Átalakítása",
+  ,
+  ,
+
+      // Statistics
+      statsTitle: "Bizonyított Teljesítmény",
+      stats:
+  number: "500+", label
+  : "Sikeres Projekt", description: "Kalitásproblémák nélkül teljesítve"
+  ,
+        savings:
+  number: "5M€+", label
+  : "Ügyfél Megtakarítás", description: "Optimalizált ellátási lánc révén"
+  ,
+        delivery:
+  number: "99,8%", label
+  : "Időben Szállítás", description: "Iparágvezető teljesítmény"
+  ,
+        satisfaction:
+  number: "100%", label
+  : "Ügyfél Elégedettség", description: "Nincs megoldatlan gond"
+  ,
+        partners:
+  number: "50+", label
+  : "Török Partnerek", description: "Hitelesített gyártói kapcsolatok"
+  ,
+        compliance:
+  number: "100%", label
+  : "EU Rendelkezésre Álló Szabályozás", description: "Teljesen tökéletes rendelkezésre álló szabályozási történet"
+  ,
+  ,
+
+      // Call to Action
+      ctaTitle: "Készen állsz az Ellátási Láncod Transformálására?",
+      ctaSubtitle: "Csatlakozz 500+ sikeres projekthez és tapasztaljuk az EuConX különbségét",
+      ctaButton: "Stratégiai Munkamenet Foglalása",
+      ctaSecondary: "Letöltés Cégprofilja",
+  ,
+}
+,
+
+  tr:
+{
+  home: "Ana Sayfa", about
+  : "Hakkımızda",
+      partners: "Ortaklarımız",
+      projects: "Projeler",
+      getQuote: "Teklif Al",
+      faq: "SSS",
+      services: "Hizmetler",
+      whyEuconx: "Neden EuConX?",
+  ,
+
+    // Hero Section
+    hero:
+  title: "Türk İnşaat Malzemelerine Geçidiniz", subtitle
+  : "Türkiye'den Macaristan ve Orta Avrupa'ya premium yalıtım malzemeleri",
+      cta: "BAŞLAYIN",
+  ,
+
+    // Services
+    services:
+  sourcing: "Tedarik", procurement
+  : "Satın Alma",
+      delivery: "Teslimat",
+      sourcingDesc: "Türk üreticilere doğrudan erişim",
+      procurementDesc: "Akıcı satın alma süreçleri",
+      deliveryDesc: "Orta Avrupa'da güvenilir teslimat",
+  ,
+
+    // About
+    about:
+  title: "Buradan Sonrasını Biz Hallederiz", description
+  :
+        "Malzeme kıtlığı, artan maliyetler ve öngörülemeyen teslimat süreleri Macaristan'daki inşaat projelerinin 3'te 2'sinden fazlasını etkiliyor. EuConX, doğrudan Türkiye'den yüksek kaliteli, uygun maliyetli malzemeler tedarik ederek ve teslim ederek bu zorlukların üstesinden gelmeye yardımcı oluyor.",
+      learnMore: "Hakkımızda daha fazla bilgi",
+  ,
+
+    // Statistics
+    stats:
+  title: "İnşaat Sektörü Zorlukları", experienceShortages
+  : "Malzeme Kıtlığı Yaşıyor",
+      highCostInflation: "Yüksek Maliyet Enflasyonu ile Başa Çıkıyor",
+      unpredictableDelivery: "Öngörülemeyen Teslimat Süreleri ile Karşılaşıyor",
+      projectDelays: "projeler gecikiyor",
+  ,
+
+    // Partners
+    partners:
+  title: "Ortaklarımız", subtitle
+  : "Verimlilik için birlikte çalışıyoruz: ODE ve diğer önde gelen Türk üreticiler.",
+
+      odeTitle: "ODE INSULATION",
+      odeDesc:
+        "Enerji verimli yapı malzemelerinde 40+ yıllık uzmanlığa sahip kapsamlı termal yalıtım çözümleri sunan önde gelen Türk üretici.",
+      odeDetails:
+        "ODE, EKR projeleri için mükemmel olan dört ana ürün hattında uzmanlaşmıştır: ODE Isıpan (üstün termal performansa sahip ekstrüde polistiren), ODE Starflex (maksimum enerji tasarrufu için premium cam yünü), ODE R-Flex (elastomerik kauçuk köpük), ve ODE Membran (gelişmiş su yalıtım sistemleri). Sürdürülebilirlik taahhütleri %60 güneş enerjisiyle çalışan üretimi içerir, bu da onları Macaristan'ın yeşil yapı girişimleri için ideal kılar.",
+      odeProducts:
+        "Ana EKR Ürünleri: Starflex Loft Rulolar (enerji maliyetlerini %30 azaltır), R-Flex PRM Levhalar (maksimum termal verimlilik), Isıpan XPS Paneller (uzun ömürlü yalıtım)",
+
+      izocamTitle: "IZOCAM INSULATION",
+      izocamDesc:
+        "Enerji verimli yapı malzemelerinde 40+ yıllık uzmanlığa sahip kapsamlı termal yalıtım çözümleri sunan önde gelen Türk üretici.",
+      izocamDetails:
+        "ODE, EKR projeleri için mükemmel olan dört ana ürün hattında uzmanlaşmıştır: ODE Isıpan (üstün termal performansa sahip ekstrüde polistiren), ODE Starflex (maksimum enerji tasarrufu için premium cam yünü), ODE R-Flex (elastomerik kauçuk köpük), ve ODE Membran (gelişmiş su yalıtım sistemleri). Sürdürülebilirlik taahhütleri %60 güneş enerjisiyle çalışan üretimi içerir, bu da onları Macaristan'ın yeşil yapı girişimleri için ideal kılar.",
+      odeProducts:
+        "Ana EKR Ürünleri: Starflex Loft Rulolar (enerji maliyetlerini %30 azaltır), R-Flex PRM Levhalar (maksimum termal verimlilik), Isıpan XPS Paneller (uzun ömürlü yalıtım)",
+
+      izocamTitle: "IZOCAM INSULATION",
+      izocamDesc:
+        "Sürdürülebilir, enerji verimli inşaat için cam yünü ve taş yünü çözümlerinde uzmanlaşmış Türkiye'nin önde gelen yalıtım üreticisi.",
+      izocamDetails:
+        "IZOCAM, optimal termal performans için tasarlanmış gelişmiş cam yünü ve taş yünü ürünleriyle Türk yalıtım endüstrisine öncülük ediyor. Kapsamlı ürün yelpazesi konut EKR yenilemeleri için yüksek performanslı cam yünü, ticari uygulamalar için yangına dayanıklı taş yünü ve özel akustik yalıtım sistemlerini içerir. Tüm ürünler katı AB enerji verimliliği standartlarını karşılar, bu da onları Macaristan'ın iddialı yenileme hedefleri için mükemmel kılar.",
+      izocamProducts:
+        "EKR Çözümleri: Premium Cam Yünü (termal iletkenlik λ=0.032-0.040 W/mK), Yangın Güvenli Taş Yünü (A1 yangın sınıflandırması), Akustik Yalıtım Sistemleri",
+
+      adoTitle: "ADO GROUP",
+      adoDesc:
+        "Modern inşaat için enerji verimli kapılar, pencereler ve döşeme sistemlerinde uzmanlaşmış Türkiye'nin önde gelen entegre yapı çözümleri üreticisi.",
+      adoDetails:
+        "ADO GROUP, Macar EKR projeleri için mükemmel olan kapsamlı yapı zarfı çözümleri üreten Antalya'daki son teknoloji tesislerden faaliyet gösteriyor. Türkiye'nin tek LVT ve SPC parke üreticisi olarak ADOKAPI ahşap kompozit kapılar (doğal estetiği ve kiváló termal performansı birleştiren), ADOFLOOR lüks vinil karo döşeme (istisnai dayanıklılık ve tasarım esnekliği), gelişmiş PVC pencere ve kapı sistemleri ve alüminyum cephe çözümleri sunuyorlar. Sürdürülebilirlik taahhütleri %100 geri dönüştürülebilir Penwood profillerini içerir, bu da onları Macaristan'ın yeşil yapı gereksinimleri için ideal kılar.",
+      adoProducts:
+        "EKR Çözümleri: ADOKAPI Kompozit Kapılar (üstün termal yalıtım), ADOFLOOR LVT Sistemleri (enerji verimli döşeme), PVC Pencere Sistemleri (termal köprü önleme), Alüminyum Cephe Çözümleri",
+
+      bonusTitle: "BONUS YALITIM",
+      bonusDesc:
+        "Maksimum enerji verimliliği için XPS sistemlerinde uzmanlaşmış yüksek performanslı termal yalıtım ve su yalıtımı çözümleri sunan önde gelen Türk üretici.",
+      bonusDetails:
+        "BONUS YALITIM, zorlu iklim koşullarında optimal enerji performansı için tasarlanmış kapsamlı yalıtım çözümleri üretmede öne çıkıyor. Ürün yelpazesi yüksek performanslı XPS termal yalıtım panellerini (istisnai termal direnç ve nem koruması), gelişmiş su yalıtım membranlarını (tam yapı zarfı koruması), özel ses yalıtım sistemlerini ve yangına dayanıklı malzemeleri içerir. Tüm ürünler enerji verimliliğini maksimize etmek ve sürdürülebilir kalkınmaya katkıda bulunmak için tasarlanmıştır, bu da onları Macaristan'ın EKR enerji yenileme programları için mükemmel kılar.",
+      bonusProducts:
+        "EKR Çözümleri: XPS Termal Paneller (üstün termal performans), Su Yalıtım Membranları (nem koruması), Ses Yalıtım Sistemleri (akustik konfor), Yangına Dayanıklı Malzemeler (güvenlik uyumluluğu)",
+
+      whyChoose: "Ortaklarımız neden EuConX'i seçiyor?",
+      reliableLogistics: "Güvenilir lojistik",
+      reliableLogisticsDesc: "Kesin teslimat programları ve kapsamlı dokümantasyon yönetimi",
+      euCompliance: "AB uyumluluğu",
+      euComplianceDesc: "CE, EPD ve diğer sertifikaların tam koordinasyonu",
+      marketExpertise: "Pazar uzmanlığı",
+      marketExpertiseDesc: "Macar ve Orta Avrupa inşaat gereksinimlerinin derin bilgisi",
+      becomePartner: "Ortağımız olmak ister misiniz?",
+      becomePartnerDesc:
+        "Önde gelen Türk üreticilerimize katılın ve teklifinizi premium yalıtım malzemeleriyle genişletin.",
+      contact: "İletişim",
+  ,
+
+    // Projects
+    projects:
+  title: "Successful EKR Projects", subtitle
+  : "Proven energy efficiency solutions with Turkish manufacturing excellence for Hungarian construction companies",
+      
+      atticInsulation: "Födémpadlás Szigetelés Program",
+      atticInsulationDesc: "Comprehensive attic insulation with premium glass wool systems",
+      atticInsulationDetails: "Large-scale residential attic insulation program using ODE Starflex glass wool and vapor barrier membranes. Achieved 40% energy savings across 120 residential units with complete thermal bridge elimination and moisture protection.",
+
+      windowRenewal: "Nyílászáró Megújítási Program", 
+      windowRenewalDesc: "Complete window and door renewal with energy-efficient systems",
+      windowRenewalDetails: "Municipal building window renewal program featuring ADO Group's advanced PVC systems with triple glazing and argon filling. Delivered 35% thermal performance improvement with 15-year warranty coverage.",
+
+      heatGlassInstallation: "Hőszigetelő Üveg Telepítés",
+      heatGlassInstallationDesc: "Advanced heat glass installation for commercial buildings",
+      heatGlassInstallationDetails: "Commercial building heat glass installation project using Low-E coated systems with argon filling. Achieved 45% heat reduction and A+ energy certification with 4.2-year payback period.",
+
+      facadeUpdate: "Külső Homlokzat Korszerűsítés",
+      facadeUpdateDesc: "External facade modernization with XPS, EPS, and stone wool systems",
+      facadeUpdateDetails: "Comprehensive facade renovation using BONUS XPS boards, EPS systems, and IZOCAM stone wool insulation. Delivered 50% performance improvement with A1 fire rating across 12,000 m² area.",
+  ,
+
+    // Footer
+    footer:
+  companyDesc: "Türk kaynaklarından Macaristan ve Orta Avrupa projelerine premium yalıtım malzemeleri sağlayan Budapeşte merkezli tedarik zinciri yönetim şirketi.",
+    servicesTitle
+  : "Hizmetler",
+      services: [
+        "Termal Yalıtım Malzemeleri",
+        "Ses Yalıtım Sistemleri",
+        "Su Yalıtım Çözümleri",
+        "ETICS Cephe Sistemleri",
+        "Uzman Danışmanlık",
+        "Lojistik Hizmetler",
+      ],
+      navigationTitle: "Navigasyon",
+      whyChooseTitle: "Neden EuConX?",
+      whyChoose: [
+  title: "Premium Kalite", desc
+  : "Önde gelen Türk üreticiler"
+  ,
+  title: "Hızlı Teslimat", desc
+  : "Zamanında, güvenilir hizmet"
+  ,
+  title: "AB Uyumlu", desc
+  : "Tüm standartları karşılar"
+  ,
+  title: "Uzmanlık", desc
+  : "15+ yıl deneyim"
+  ,
+      ],
+      contact:
+  address: "Budapeşte, Macaristan", phone
+  : "+36 1 XXX XXXX",
+        email: "info@euconx.hu",
+        hours: "Pzt-Cum: 8:00-17:00",
+  ,
+      copyright: "© 2025 EuConX. Tüm hakları saklıdır.",
+      legal:
+  privacy: "Gizlilik Politikası", terms
+  : "Şartlar ve Koşullar",
+        cookies: "Çerez Politikası",
+  ,
+  ,
+
+    // Why EuConX Benefits
+    whyEuconx:
+  title: "Tek Ortak, Tam Çözümler", description
+  :
+            "Kapsamlı tedarik zinciri yönetimimizle koordinasyon baş ağrılarını ortadan kaldırın. Termal yalıtımdan akıllı yapı sistemlerine kadar her şeyi tek bir iletişim noktası üzerinden hallediyoruz. 24 saat içinde teklifinizi alın ve yarın inşaata başlayın.",
+  ,
+        riskReduction:
+  title: "Sıfır Tedarik Zinciri Kesintisi", description
+  :
+            "%100 zamanında teslimat konusundaki kanıtlanmış sicilimiz projelerinizin programında kalması anlamına gelir. Yedek tedarikçiler, kalite garantileri ve gerçek zamanlı takip ile inşaat zaman çizelgelerini raydan çıkarıyoruz. Başarınız garanti altında.",
+  ,
+        scalability:
+  title: "1'den 1000 Projeye Ölçeklendirme", description
+  :
+            "İster tek bir ev inşa ediyor olun ister şehir çapında yenilemeler yönetiyor olun, Türk üretim ağımız hırslarınızla birlikte büyür. İşinizi büyüttükçe sınırsız kapasiteye, tutarlı fiyatlandırmaya ve öncelikli desteğe erişin.",
+  ,
+  ,
+  ,
+
+    // FAQ Section
+    faq:
+  title: "Sık Sorulan Sorular", subtitle
+  : "EuConX ve Türk üretici ortaklarımızla çalışma hakkında sık sorulan soruların yanıtları",
+
+      q1:
+  question: "Kritik inşaat projelerim için Türk tedarikçilere nasıl güvenebilirim?", answer
+  :
+          "Türk ortaklarımız 40+ yıllık deneyime sahip sektör liderleri ve tam AB sertifikalarına sahipler (CE işareti, ISO 9001, ISO 14001). Sıfır kalite sorunu ile 500+ başarılı proje tamamladık. Her sevkiyat kapsamlı kalite belgeleri ve %100 memnuniyet garantisi içerir. STRABAG ve Market Építő gibi şirketler en büyük projeleri için tedarikçilerimize güveniyor.",
+  ,
+
+      q2:
+  question: "Malzemeler geç gelirse ve proje zaman çizelgemi geciktirirse ne olur?", answer
+  :
+          "5 yıl boyunca %99,8 zamanında teslimat rekoru ile zamanında teslimatı garanti ediyoruz. Lojistik ağımız yedek rotalar ve acil durum tedarikçilerini içerir. Herhangi bir gecikme olursa (18 aydır olmadı), 24 saat içinde alternatif çözümler sağlar ve ek maliyetleri karşılarız. Gerçek zamanlı takip her adımda sizi bilgilendirir.",
+  ,
+
+      q3:
+  question: "Türk malzemeleri yerel tedarikçilere kıyasla gerçekten uygun maliyetli mi?", answer
+  :
+          "Evet! Müşterilerimiz malzeme maliyetlerinde %15-30 tasarruf ediyor ve üstün kalite alıyor. Son proje: Debrecen ofis kompleksi sadece yalıtım malzemelerinde 180.000 euro tasarruf etti. Doğrudan üretici ilişkileri ile aracı kar marjlarını ortadan kaldırıyoruz. Ayrıca toplu satın alma gücümüz ve optimize edilmiş lojistiğimiz toplam proje maliyetlerinizi önemli ölçüde azaltır.",
+  ,
+
+      q4:
+  question: "Malzemelerin Macar yapı kodlarını ve AB standartlarını karşıladığını nasıl garanti ediyorsunuz?", answer
+  :
+          "Tüm malzemelerimiz tam dokümantasyon paketleri ile Macar ve AB gereksinimlerini aşıyor. CE işareti, EPD sertifikaları, yangın güvenliği sınıflandırmaları ve termal performans verileri sağlıyoruz. Kalite güvence ekibimiz her ürünü önceden doğrular. Malzemelerimizin %100'ü Macar yapı otoritesi denetimlerini sorunsuz geçti.",
+  ,
+
+      q5:
+  question: "Teknik desteğe ihtiyacım olursa veya kurulum sorularım varsa ne olur?", answer
+  :
+          "Teknik ekibimiz Macarca, İngilizce ve Türkçe 7/24 destek sağlar. Yerinde danışmanlık, kurulum rehberliği ve sorun giderme sunuyoruz. Ortaklarımızın teknik uzmanları karmaşık projeler için mevcuttur. Teknik sorguların %98'ini 2 saat içinde çözdük. Her siparişte ücretsiz teknik destek dahildir.",
+  ,
+
+      q6:
+  question: "Hem küçük konut hem de büyük ticari projeleri yönetebilir misiniz?", answer
+  :
+          "Kesinlikle! Müstakil evlerden şehir çapında yenilemelere kadar ölçeklendiriyoruz. Son projeler 50m² dairelerden 50.000m² endüstriyel komplekslere kadar uzanıyor. Türk üretim ağımız sınırsız kapasiteye sahip. 10m² veya 100.000m² malzemeye ihtiyacınız olsun, aynı premium hizmeti ve rekabetçi fiyatlandırmayı sağlıyoruz.",
+  ,
+
+      socialProof:
+  title: "Önde Gelen Macar İnşaat Şirketlerinin Güveni", testimonial1
+  :
+          "EuConX son projemizde %25 tasarruf sağladı ve üstün kaliteli malzemeler teslim etti. Türk ortakları dünya standartlarında.",
+        client1: "János Kovács, Budapest Construction Ltd Proje Müdürü",
+        testimonial2:
+          "Güvenilir teslimat, mükemmel kalite ve olağanüstü destek. EuConX'i 15+ projede sıfır sorunla kullandık.",
+        client2: "Péter Nagy, Magyar Építő Group CEO'su",
+        stats:
+  projects: "500+ Başarılı Proje", savings
+  : "2,5M€+ Müşteri Tasarrufu",
+          delivery: "%99,8 Zamanında Teslimat",
+          satisfaction: "%100 Müşteri Memnuniyeti",
+  ,
+  ,
+
+      cta:
+  title: "Hala Sorularınız Var mı?", subtitle
+  : "Uzmanlarımızdan kişiselleştirilmiş yanıtlar alın",
+        button: "Ücretsiz Danışmanlık Planlayın",
+        urgency: "Bu hafta sınırlı slot mevcut",
+  ,
+  ,
+
+    // About Us Page
+    aboutPage:
+  title: "EuConX Hakkında", subtitle
+  : "Magyar Innovasyon ve Török mükemmeliyet arasında köprü",
+
+      // Team Section
+      teamTitle: "Liderlik Csapatunkat Ismerd",
+      teamSubtitle: "Tapasztalt profesionálisok, akik a világon az ellátási lánc hatékonyságát fokozzák",
+
+      // Real team members with detailed backgrounds
+      teamMembers:
+  name: "Ahmet Alptekin KASAR", title
+  : "Managing Director & Founder",
+          bio: "15+ years in international trade and supply chain management. Former procurement director at leading Hungarian construction companies. Fluent in Hungarian, Turkish, and English.",
+          expertise: "Strategic partnerships, market expansion, regulatory compliance",
+          quote:
+            "Our mission is to eliminate supply chain complexity for Hungarian constructors while delivering unmatched quality from Turkey's best manufacturers.",
+  ,
+        efe:
+  name: "Efe SARINALBANT", title
+  : "CPO & Supply Chain Director",
+          bio: "Supply chain optimization expert with deep knowledge of Turkish manufacturing landscape. MBA in Operations Management from Istanbul Technical University.",
+          expertise: "Logistics optimization, quality assurance, vendor management",
+          quote:
+            "We've built relationships with Turkey's top manufacturers over decades, ensuring our clients get premium materials at competitive prices.",
+  ,
+        cihan:
+  name: "Cihan PEYNIRCI", title
+  : "Turkish Operations Manager",
+          bio: "Based in Istanbul, manages relationships with 50+ Turkish manufacturers. Former quality control manager at leading insulation companies.",
+          expertise: "Manufacturing partnerships, quality control, technical specifications",
+          quote: "Every shipment meets European standards because we personally verify quality at the source.",
+  ,
+        henriett:
+  name: "Henriett VINCZE", title
+  : "Director of Excellence & Audit",
+          bio: "Hungarian construction industry veteran with expertise in EU compliance and building regulations. Certified project management professional.",
+          expertise: "EU compliance, project management, client relations",
+          quote: "We understand Hungarian construction challenges firsthand and provide solutions that actually work.",
+  ,
+  ,
+
+      // Company History Timeline
+      historyTitle: "Útunk",
+      historySubtitle: "Török kiválóság és magyar innováció közötti kötődők építése",
+
+      milestones:
+  year: "2019", title
+  : "Cég Alapítása",
+          description:
+            "Budapesten alapítottuk az EuConX-et, hogy kapcsolatot létesítsünk a magyar építőcégekkel és a török gyártókkal",
+          impact: "Először 3 török szigetelőcéggel kapcsolatot létesítettünk",
+  ,
+        expansion:
+  year: "2021", title
+  : "Piaci Kiterjesztés",
+          description: "50+ magyar építőcéget szolgáltatunk teljes ellátási lánc megoldásokkal",
+          impact: "2,5M€ anyagot szállítottunk, 100+ sikeres projektet teljesítettünk",
+  ,
+        certification:
+  year: "2022", title
+  : "EU Rendelkezésre Álló Szabályozási Kiválóság",
+          description:
+            "Teljes EU rendelkezésre álló szabályozási hitelesítést értünk el minden partnerek termékeire és minőség biztosítási protokollokat állítottunk be",
+          impact: "Nincs rendelkezésre álló szabályozási probléma, 100% ügyfél elégedettségi arány",
+  ,
+        growth:
+  year: "2023", title
+  : "Stratégiai Növekedés",
+          description: "10+ vezető török gyártóval kapcsolatot létesítettünk, EKR-szakos termékcsaládokat indítottunk",
+          impact: "300+ projektet teljesítettünk, 5M+ ügyfél megtakarítást értünk el",
+  ,
+        innovation:
+  year: "2024", title
+  : "Digitális Innováció",
+          description: "Valós idejű nyomon követési platformot és mesterséges intelligencia alapú ellátási optimalizációt indítottunk",
+          impact: "99,8% időben szállítási arány, iparágvezető teljesítmény",
+  ,
+        future:
+  year: "2025", title
+  : "Közép-Európai Vezető",
+          description: "Cseckországba és Szlovákiaba kiterjesztünk, 1000+ projektet célzunk évente",
+          impact: "Következő 15M+ ügyfél megtakarítás évente",
+  ,
+  ,
+
+      // Expertise Areas
+      expertiseTitle: "Különös Képességeink",
+      expertiseSubtitle: "Az ellátási lánc iparágban különös ismeretek, amelyekkel különbséget jelentünk",
+
+      capabilities:
+  title: "Török Piaci Mesteri", description
+  : "50+ gyártóval rendelkező mély kapcsolatok, 15+ év piaci ismeret",
+          proof: "Kapcsolatot létesítettünk a Török iparág vezetőivel, mint az ODE, IZOCAM és ADO Group",
+  ,
+        euCompliance:
+  title: "EU Rendelkezésre Álló Szabályozási Kiválóság", description
+  :
+            "100% rendelkezésre álló szabályozási teljesítmény, CE jelölés és EPD igények navigációja",
+          proof: "Nincs rendelkezésre álló szabályozási probléma 500+ szállítás során",
+  ,
+        logisticsOptimization:
+  title: "Ellátási Optimalizáció", description
+  :
+            "Mesterséges intelligencia alapú útvonal optimalizálása, valós idejű nyomon követés, vészhelyzeti tervek",
+          proof: "99,8% időben szállítási arány, iparágvezető teljesítmény",
+  ,
+        qualityAssurance:
+  title: "Minőség Garanciája", description
+  : "Több szakaszú minőségellenőrzés, gyártási vizsgálatok, teljesítmény garanciák",
+          proof: "100% ügyfél elégedettségi arány, teljes garanciák fedezése",
+  ,
+        costOptimization:
+  title: "Költségmérnöki Munka", description
+  : "Tömeges beszerzési erő, közvetlen gyártói kapcsolatok, optimalizált ellátás",
+          proof: "20-30% átlagos költségmegtakarítás a konzervatív szolgáltatóktól",
+  ,
+        technicalSupport:
+  title: "Technikai Szakértői Ismeret", description
+  : "24/7 többnyelvű támogatás, helyszíni konzultáció, telepítési útmutatás",
+          proof: "98% technikai problémák 2 órán belül megoldották",
+  ,
+  ,
+
+      // Social Proof Section
+      socialProofTitle: "Vezető Ipari Cégek Bizalma",
+      clientTestimonials:
+  quote: "Az EuConX megváltoztatta ellátási láncunkat. 25%-os költségmegtakarítás, nulla minőségprobléma, tökéletes szállítási időpont.",
+    client
+  : "Kovács János, Projektvezető",
+          company: "STRABAG Hungary",
+          project: "Budapesteni Metró Kiterjesztési Projekt",
+  ,
+        testimonial2:
+  quote: "Török partnereik világszínvonalú anyagokat szállítanak. 20+ projektet teljesíttünk az EuConX-szel hibátlanul.",
+    client
+  : "Nagy Péter, CEO",
+          company: "Market Építő Group",
+          project: "Debreceni Irodaház Komplex",
+  ,
+        testimonial3:
+  quote: "Kiváló szolgáltatás és megbízhatóság. Az EuConX megérti a magyar építőipar igényeit tökéletesen.", client
+  : "Szabó Andrea, Beszerzési Vezető",
+          company: "Magyar Építőipari Kft",
+          project: "Lakókörzet Átalakítása",
+  ,
+  ,
+
+      // Statistics
+      statsTitle: "Bizonyított Teljesítmény",
+      stats:
+  number: "500+", label
+  : "Sikeres Projekt", description: "Kalitásproblémák nélkül teljesítve"
+  ,
+        savings:
+  number: "5M€+", label
+  : "Ügyfél Megtakarítás", description: "Optimalizált ellátási lánc révén"
+  ,
+        delivery:
+  number: "99,8%", label
+  : "Időben Szállítás", description: "Iparágvezető teljesítmény"
+  ,
+        satisfaction:
+  number: "100%", label
+  : "Ügyfél Elégedettség", description: "Nincs megoldatlan gond"
+  ,
+        partners:
+  number: "50+", label
+  : "Török Partnerek", description: "Hitelesített gyártói kapcsolatok"
+  ,
+        compliance:
+  number: "100%", label
+  : "EU Rendelkezésre Álló Szabályozás", description: "Teljesen tökéletes rendelkezésre álló szabályozási történet"
+  ,
+  ,
+
+      // Call to Action
+      ctaTitle: "Készen állsz az Ellátási Láncod Transformálására?",
+      ctaSubtitle: "Csatlakozz 500+ sikeres projekthez és tapasztaljuk az EuConX különbségét",
+      ctaButton: "Stratégiai Munkamenet Foglalása",
+      ctaSecondary: "Letöltés Cégprofilja",
+  ,
+}
+,
+}

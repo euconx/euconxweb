@@ -1,4 +1,4 @@
-      },
+},
 
       q3: {
         question: "Valóban költséghatékonyak a török anyagok a helyi beszállítókhoz képest?",

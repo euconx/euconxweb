@@ -1,5 +1,7 @@
 "use client"
 
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 import { useLanguage } from "@/lib/language-context"
 import { CheckCircle, Thermometer, Shield, Clock, ArrowRight, Download, Phone } from "lucide-react"
 import Link from "next/link"
@@ -13,7 +15,9 @@ export default function ThermalInsulationPage() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen flex flex-col">
+      <Navigation />
+      <main className="flex-1">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-orange-900 text-white py-20">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -178,6 +182,8 @@ export default function ThermalInsulationPage() {
           <p className="text-sm text-orange-100 mt-8 max-w-2xl mx-auto">{getString("thermalInsulation.disclaimer")}</p>
         </div>
       </section>
+      </main>
+      <Footer />
     </div>
   )
 }

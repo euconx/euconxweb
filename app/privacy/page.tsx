@@ -1,5 +1,7 @@
 "use client"
 
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 import { useLanguage } from "@/lib/language-context"
 
 export default function PrivacyPolicy() {
@@ -104,7 +106,9 @@ export default function PrivacyPolicy() {
   const content = privacyContent[language]
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen flex flex-col">
+      <Navigation />
+      <main className="flex-1 bg-white">
       <div className="max-w-4xl mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-slate-900 mb-4">{content.title}</h1>
         <p className="text-slate-600 mb-8">{content.lastUpdated}</p>
@@ -118,6 +122,8 @@ export default function PrivacyPolicy() {
           ))}
         </div>
       </div>
+      </main>
+      <Footer />
     </div>
   )
 }

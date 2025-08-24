@@ -964,10 +964,19 @@ export const translations = {
       about: "Rólunk",
       partners: "Partnereink",
       projects: "Projektek",
-      getQuote: "Ajánlatkérés",
+      getQuote: "Ingyenes Ajánlat",
       faq: "GYIK",
       services: "Szolgáltatások",
       whyEuconx: "Miért EuConX?",
+    },
+
+    // Hero Section
+    hero: {
+      title: "Türk Építőanyagok Kapuja",
+      subtitle: "Kapcsolatot teremtünk Törökország vezető gyártóival prémium szigetelőanyagokért. Spóroljon 20-30%-ot a költségeken garantált minőséggel és gyors szállítással Közép-Európában.",
+      cta: "Ingyenes Ajánlat - 24 órás válasz",
+      ctaSecondary: "Sikertörténetek Megtekintése",
+      trustBadge: "500+ Projekt • 5M€+ Megtakarítás • 99,8% Időben",
     },
 
     // Copy all English translations for now - can be properly translated later
@@ -1017,16 +1026,25 @@ export const translations = {
   },
 
   tr: {
-    // Turkish translations continue here...
+    // Navigation
     nav: {
       home: "Ana Sayfa",
       about: "Hakkımızda",
       partners: "Partnerler",
       projects: "Projeler",
-      getQuote: "Teklif Al",
+      getQuote: "Ücretsiz Teklif Al",
       faq: "SSS",
       services: "Hizmetler",
       whyEuconx: "Neden EuConX?",
+    },
+
+    // Hero Section
+    hero: {
+      title: "Türk İnşaat Malzemelerine Açılan Kapınız",
+      subtitle: "Premium yalıtım malzemeleri için Türkiye'nin önde gelen üreticileriyle bağlantı kurun. Garantili kalite ve Orta Avrupa'ya hızlı teslimatla maliyetlerinizde %20-30 tasarruf edin.",
+      cta: "Ücretsiz Teklif Al - 24 Saat Yanıt",
+      ctaSecondary: "Başarı Hikayelerini Görün",
+      trustBadge: "500+ Proje • 5M€+ Tasarruf • %99,8 Zamanında",
     },
 
     // Add all Turkish translations...

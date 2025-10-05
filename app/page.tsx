@@ -3,7 +3,7 @@
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import { useLanguage } from "@/lib/language-context"
-import { ArrowRight, CheckCircle, Users, Clock, Building2, Truck, Shield, Zap, TrendingUp, Award, Star, ChevronRight } from "lucide-react"
+import { ArrowRight, CircleCheck as CheckCircle, Users, Clock, Building2, Truck, Shield, Zap, TrendingUp, Award, Star, ChevronRight } from "lucide-react"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
